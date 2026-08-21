@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orçamentos — Creative Works 3D</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #FFFDF8;
+    --paper: #FFFFFF;
+    --ink: #3A3247;
+    --ink-soft: #756C87;
+    --coral: #FF9E85;
+    --coral-soft: #FFE3DA;
+    --violet: #B9A6D9;
+    --violet-soft: #EDE6F7;
+    --line: #EFE7DC;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{
+    background: var(--bg);
+    font-family:'Nunito', sans-serif;
+    color: var(--ink);
+    display:flex;
+    justify-content:center;
+    padding: 60px 16px;
+  }
+  .wrap{ width:100%; max-width: 640px; }
+  .ribbon{
+    height: 8px;
+    border-radius: 100px;
+    background: linear-gradient(90deg, var(--coral), var(--violet));
+    margin-bottom: 28px;
+  }
+  h1{
+    font-family:'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 26px;
+    margin-bottom: 6px;
+  }
+  .sub{ color: var(--ink-soft); font-size: 14px; margin-bottom: 32px; }
+  .list{ display:flex; flex-direction:column; gap: 14px; }
+  .item{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap: 12px;
+    background: var(--paper);
+    border: 1.5px solid var(--line);
+    border-radius: 16px;
+    padding: 18px 20px;
+    text-decoration:none;
+    color: var(--ink);
+    transition: transform .15s ease, border-color .15s ease;
+  }
+  .item:hover{ transform: translateY(-2px); border-color: var(--violet); }
+  .item-info .name{ font-family:'Poppins', sans-serif; font-weight:700; font-size: 15px; }
+  .item-info .meta{ font-size: 12.5px; color: var(--ink-soft); margin-top:3px; }
+  .arrow{
+    font-family:'Poppins', sans-serif;
+    font-weight:700;
+    color: var(--coral);
+    font-size: 18px;
+  }
+  .empty{
+    color: var(--ink-soft);
+    font-size: 14px;
+    text-align:center;
+    padding: 40px 20px;
+    border: 1.5px dashed var(--line);
+    border-radius: 16px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="ribbon"></div>
+  <h1>Orçamentos — Creative Works 3D</h1>
+  <div class="sub">Lista de orçamentos disponíveis neste link.</div>
+
+  <div class="list">
+    <a class="item" href="orcamento-532-flavia.html">
+      <div class="item-info">
+        <div class="name">Orçamento Nº 532 — Flávia</div>
+        <div class="meta">Cortadores de biscoito personalizados</div>
+      </div>
+      <div class="arrow">→</div>
+    </a>
+  </div>
+</div>
+</body>
+</html>
